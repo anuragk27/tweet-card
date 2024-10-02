@@ -1,4 +1,4 @@
-# tweet-card design
+# Tweet-card design
 **HTML,CSS**
 
 # Screenshot
