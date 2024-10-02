@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tweet</title>
+</head>
+<style>
+  body{
+    background-color: CornflowerBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;          
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .card{
+    /* width:700px; */
+    /* height: 400px; */
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;          
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .container{
+    padding:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  header{
+    display: flex;
+  }
+
+  header profile-name{
+    display: flex;
+    margin-left: 10px;
+  }
+
+  header .follow-btn {
+    margin: 0 0 0 auto;
+    /* display:flex; */
+  }
+
+  header h3, header h4 {
+    margin:0;
+    display:flex;
+  }
+
+  .inner p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    /* text-align: center; */
+  }
+
+  .inner hr {
+    margin: 20px 0;
+    border-style: solid;
+    opacity: 0.1;
+  }
+
+  header .follow-btn button {
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+  }
+
+
+  header .profile-thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+  
+  footer {
+    display:flex;
+  }
+
+  footer .stats {
+    font-size: 15px;
+    display:flex;
+  }
+
+  footer .stats strong {
+    font-size: 18px;
+  }
+
+  footer .stats .likes {
+    margin-left: 10px;
+  }
+
+  footer .action {
+    margin-left: auto;
+  }
+
+  footer .action button {
+    border: 0;
+    background: transparent;
+  }
+
+</style>
+<body>
+  <div class="card">
+    <div class="container">
+      <header>
+        <img src="Anurag.jpeg" alt="img" class="profile-thumbnail">
+        <div class="profile-name">
+          <h3>Anurag Kumar</h3>
+          <h4>@anuragk27</h4>
+        </div>
+        <div class="follow-btn">
+          <button>Follow</button>
+        </div>
+      </header>
+      <div class="inner">
+        <p>“Be the change that you wish to see in the world.”
+          <span>― Mahatma Gandhi</span><br>
+          <span class="date">1:32 PM - 2 Oct 2024</span>
+        </p>
+        <hr>
+      </div>
+      <footer>
+        <div class="stats">
+          <div class="retweets">
+            <strong>1.2k</strong> Retweets
+          </div>
+          <div class="likes">
+            <strong>1.5k</strong> Likes
+          </div>
+        </div>
+        <div class="action">
+          <button class="share-btn">Share</button>
+          <button class="retweet-btn">Retweet</button>
+          <button class="like-btn">Like</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
